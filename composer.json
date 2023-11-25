@@ -1,0 +1,32 @@
+{
+    "name": "mateuswerneck/php-functional",
+    "type": "project",
+    "require": {
+        "fp4php/functional": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mateuswerneck\\PhpFunctional\\": "src/",
+            "Business\\": "src/Business",
+            "Lib\\": "src/Lib"
+        },
+        "files": [
+            "src/Business/Data/User/ValidateUser.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mateus-werneck",
+            "email": "werneck.mateus@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^11.0@dev"
+    }
+}
